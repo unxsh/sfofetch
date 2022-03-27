@@ -1,3 +1,3 @@
 /bin/sh
-sudo pacman -S busybox
+sudo pacman -Sy busybox
 sudo mv sff.sh /usr/local/bin/sff
