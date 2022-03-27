@@ -1,5 +1,5 @@
 # :space_invader: sfofetch :space_invader:
-## Tiny fetch in sh based on ``busybox`` utils for linux
+## Tiny fetch in sh on ``busybox`` utils for linux
 # installation
 ```bash
 chmod +x install.sh
