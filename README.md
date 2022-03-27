@@ -1,5 +1,5 @@
 # :space_invader: sfofetch :space_invader:
-## tiny fetch in sh with busybox utils for arch linux and my rises on unixporn
+## Tiny fetch in sh with busybox utils for arch linux and my rises on unixporn
 # installation
 ```bash
 chmod +x install.sh
