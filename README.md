@@ -1,6 +1,6 @@
-# sfofetch
-## tiny fetch in sh for dash or ash
-#installation
+# :fire: sfofetch :fire:
+## tiny fetch in sh for arch linux and my rises on unixporn
+# installation
 ```fish
 ./install.sh
 ```
