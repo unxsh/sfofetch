@@ -30,14 +30,15 @@ echo "$(tput bold)     ,---._
    `._   $(tput setaf 1)WM       $(tput setaf 7)= qpwm"' >> sff
       ;;
       "3")
+            sudo emerge --ask sys-apps/busybox
         echo '#!/bin/busybox ash
 echo "$(tput bold)    ___
- _-----_ $(tput setaf 13)HOST $(tput setaf 7)= $(hostname)
-(       \$(tput setaf 13)KERNEL $(tput setaf 7)= $(uname -sr)
-\    0   \$(tput setaf 13)UP $(tput setaf 7)= $(/usr/bin/uptime -p | sed "s/up //")
- \        )$(tput setaf 13)PACKAGES $(tput setaf 7)= $(expr $(ls -d /var/db/pkg/*/* | wc -l) - 1)
- /      _/$(tput setaf 13)WM $(tput setaf 7)= qpwm
-(     _-
+ _-----_ 
+(       \ $(tput setaf 13)HOST $(tput setaf 7)= $(hostname)
+\    0   \ $(tput setaf 13)KERNEL $(tput setaf 7)= $(uname -sr)
+ \        ) $(tput setaf 13)UP $(tput setaf 7)= $(/usr/bin/uptime -p | sed "s/up //")
+ /      _/ $(tput setaf 13)PACKAGES $(tput setaf 7)= $(expr $(ls -d /var/db/pkg/*/* | wc -l) - 1)
+(     _- $(tput setaf 13)WM $(tput setaf 7)= qpwm
 \____-"' >> sff
       ;;
       "4")
