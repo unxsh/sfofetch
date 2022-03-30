@@ -30,6 +30,7 @@ echo "$(tput bold)    ___
 \____-"' >> /usr/local/bin/sff
       ;;    
       "3")
+        echo "$(tput bold)$(tput setaf 1)WARNING$(tput setaf 7): install busybox utils!!!"
         echo '#!/bin/busybox ash
 echo "$(tput bold)    ___
    (.. \   $(tput setaf 3)HOST $(tput setaf 7)= $(hostname)
