@@ -1,9 +1,8 @@
 #!/bin/sh
 echo "sfofetch installer 0.1"
 echo "1) Arch Linux"
-    echo "2) Debian"
-    echo "3) Gentoo"
-    echo "4) Linux"
+    echo "2) Gentoo"
+    echo "3) Linux"
     read -p "Select needed distro: " distro
     case $distro in
       "1")
@@ -19,17 +18,6 @@ echo "$(tput bold)       .
 $(tput bold)/ /         \ \ "' >> sff
       ;;
       "2")
-      		sudo apt install busybox
-        echo '#!/bin/busybox ash
-echo "$(tput bold)     ,---._
- /`  __  \   $(tput setaf 1)HOST     $(tput setaf 7)= $(hostname)
-|   /  \  | $(tput setaf 1)OS       $(tput setaf 7)= Debian $(cat /etc/debian_version)
-|   \____/ $(tput setaf 1)KERNEL   $(tput setaf 7)= $(uname -sr)
- \         $(tput setaf 1)UP       $(tput setaf 7)= $(/usr/bin/uptime -p | sed "s/up //")
-  \       $(tput setaf 1)PACKAGES $(tput setaf 7)= $(dpkg -l | grep -c ^i)
-   `._   $(tput setaf 1)WM       $(tput setaf 7)= qpwm"' >> sff
-      ;;
-      "3")
             sudo emerge --ask sys-apps/busybox
         echo '#!/bin/busybox ash
 echo "$(tput bold)    ___
@@ -41,7 +29,7 @@ echo "$(tput bold)    ___
 (     _- $(tput setaf 13)WM $(tput setaf 7)= qpwm
 \____-"' >> sff
       ;;    
-      "4")
+      "3")
         echo '#!/bin/busybox ash
 echo "$(tput bold)    ___
    (.. \   $(tput setaf 3)HOST $(tput setaf 7)= $(hostname)
